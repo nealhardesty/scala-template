@@ -7,5 +7,5 @@ organization := "com.roadwaffle"
 scalaVersion := "2.11.5"
 
 libraryDependencies ++= Seq(
-    "org.scalatest"   %% "scalatest"    % "2.2.4"   % "test"
+    "org.scalatest" %% "scalatest" % "2.2.4" % "test"
 )
