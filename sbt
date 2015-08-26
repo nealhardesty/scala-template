@@ -9,6 +9,7 @@ SBT_LAUNCH=$(dirname $0)/sbt-launch.jar
 
 # Download sbt-launcher if necessary
 if [ \! -s "$SBT_LAUNCH" ]; then
+	echo "Fetching $SBT_LAUNCH ..."
 	curl -L -o $SBT_LAUNCH "$SBT_LAUNCHER_URL"
 fi
 
