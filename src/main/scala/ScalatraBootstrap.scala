@@ -1,9 +1,9 @@
-import com.salesforce.blocker._
+import com.roadwaffle.demo._
 import org.scalatra._
 import javax.servlet.ServletContext
 
 class ScalatraBootstrap extends LifeCycle {
   override def init(context: ServletContext) {
-    context.mount(new BlockerServlet, "/*")
+    context.mount(new DemoServlet, "/*")
   }
 }
